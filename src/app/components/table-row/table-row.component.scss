@@ -1,0 +1,27 @@
+@import '../table/table.component.scss';
+.row {
+    &:hover {
+        background-color: rgba(0, 1, 68, 0.1);
+    }
+    @extend %row;
+    .cell {
+        @extend %cell
+    }
+    .big-cell {
+        @extend %cell;
+        flex: 1 0 11rem;
+    }
+    .action-button {
+        width: 2vw;
+        height: 2vw;
+        margin: 0 0.4rem;
+        color: #0000005b;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .actions {
+        justify-content: center;
+    }
+}

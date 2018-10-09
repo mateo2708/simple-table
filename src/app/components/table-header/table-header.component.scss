@@ -1,0 +1,22 @@
+@import '../table/table.component.scss';
+.row {
+    @extend %row;
+    height: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    .cell {
+        @extend %cell;
+        color: #0000005b;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .big-cell {
+        @extend %cell;
+        flex: 1 0 11rem;
+    }
+    .actions {
+        justify-content: center;
+    }
+}

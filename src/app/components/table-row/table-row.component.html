@@ -1,0 +1,15 @@
+
+<div class="row">
+  <div class="cell" *ngFor="let stHeader of arrHeaders" [ngClass]="{'big-cell': stHeader === 'nombre'}">{{objData[stHeader]}}</div>
+  <div class="cell actions">
+    <div class="action-button" (click)="emitAction('edit', objData)">
+      <img src="../../assets/edit.svg">
+    </div>
+    <div class="action-button" (click)="emitAction('view', objData)">
+      <img src="../../assets/view.svg">
+    </div>
+    <div class="action-button" (click)="emitAction('delete', objData)">
+      <img src="../../assets/delete.svg">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="table">
+  <app-table-header [headers]='arrHeaders'></app-table-header>
+  <app-table-row *ngFor="let object of arrData" [headers]='arrHeaders' [data]='object' (action)="executeAction($event)"></app-table-row>
+</div>
