@@ -7,6 +7,7 @@ import { PageComponent } from './components/page/page.component';
 import { CardComponent } from './components/card/card.component';
 import { TableHeaderComponent } from './components/table-header/table-header.component';
 import { TableRowComponent } from './components/table-row/table-row.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TableRowComponent } from './components/table-row/table-row.component';
     PageComponent,
     CardComponent,
     TableHeaderComponent,
-    TableRowComponent
+    TableRowComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule
