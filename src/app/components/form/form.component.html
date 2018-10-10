@@ -1,0 +1,10 @@
+<div class="container">
+  <form>
+    <div class="element-container" *ngFor="let key of arrKeys">
+      <label>
+        {{key}}
+      </label>
+      <input type="text" placeholder="Tales de mileto" [value]="objData[key]" [disabled]="true">
+    </div>
+  </form>
+</div>

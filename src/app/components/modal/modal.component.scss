@@ -1,0 +1,20 @@
+:host {
+
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: fixed;
+    left: 25vw;
+    top: 25vh;
+    z-index: 2000;
+}

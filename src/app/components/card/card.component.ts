@@ -12,6 +12,7 @@ export class CardComponent implements OnInit {
 
   @Input('width') stWidth: String;
   @Input('height') stHeight: String;
+  @Input('title') stTitle: String;
 
   constructor(private el: ElementRef) { }
 

@@ -1,16 +1,17 @@
 <div class="page-container">
-  <div class="page-header">
-
-  </div>
-  <div class="page-content">
-
-  </div>
+  <div class="page-header">  </div>
+  <div class="page-content"></div>
 </div>
 <div class="content">
-  <app-card [width]="'70vw'" [height]="'80vh'"> 
+  <app-card width="70vw" height="80vh" title="Tabla deportistas">
     <app-table>
       <app-table-header [headers]='arrHeaders'></app-table-header>
       <app-table-row *ngFor="let object of arrData" [headers]='arrHeaders' [data]='object' (action)="executeAction($event)"></app-table-row>
     </app-table>
   </app-card>
+  <app-modal *ngIf="boolModal" (action)="handleModal($event)" >
+    <app-card width="50vw" height="50vh" title="Cagaste Paco">
+      <app-form [object]="objModalData"></app-form>
+    </app-card>
+  </app-modal>
 </div>

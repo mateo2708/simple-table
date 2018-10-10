@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 import { TableHeaderComponent } from './components/table-header/table-header.component';
 import { TableRowComponent } from './components/table-row/table-row.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ModalComponent } from './components/modal/modal.component';
     CardComponent,
     TableHeaderComponent,
     TableRowComponent,
-    ModalComponent
+    ModalComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule
