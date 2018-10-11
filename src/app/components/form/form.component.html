@@ -1,10 +1,19 @@
 <div class="container">
-  <form>
+  <form #f="ngForm" >
     <div class="element-container" *ngFor="let key of arrKeys">
       <label>
         {{key}}
       </label>
-      <input type="text" placeholder="Tales de mileto" [value]="objData[key]" [disabled]="true">
+      <input name="input-{{key}}" type="text" placeholder="Inserte aquí {{key}}" [value]="objTemp[key]" [disabled]="!blIsEdit"
+        [(ngModel)]="objTemp[key]" id="objTemp[key]" required>
     </div>
   </form>
+  <div class="buttons-container" *ngIf="blIsEdit">
+    <button class="button delete" (click)="emitAction('delete')">
+      ELIMINAR
+    </button>
+    <button class="button save" (click)="emitAction('save')" [disabled]="!f.valid">
+      GUARDAR
+    </button>
+  </div>
 </div>

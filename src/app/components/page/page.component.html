@@ -9,9 +9,13 @@
       <app-table-row *ngFor="let object of arrData" [headers]='arrHeaders' [data]='object' (action)="executeAction($event)"></app-table-row>
     </app-table>
   </app-card>
-  <app-modal *ngIf="boolModal" (action)="handleModal($event)" >
-    <app-card width="50vw" height="50vh" title="Cagaste Paco">
-      <app-form [object]="objModalData"></app-form>
+  <app-modal *ngIf="blModal" (action)="handleModal($event)" >
+    <app-card width="50vw" height="50vh" title="Deportista">
+      <app-form [object]="objModalData" [isEdit]="blIsEdit" (action)="executeAction($event)"></app-form>
     </app-card>
   </app-modal>
+  <app-fab (action)="executeAction($event)"></app-fab>
 </div>
+
+
+

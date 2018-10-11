@@ -37,7 +37,8 @@ export class TableRowComponent implements OnInit {
   /**
    * @name emitAction
    * @description Metodo que emite un evento con parametros especificos al ejecutarse.
-   * @param {*} action Objeto con los parametros del evento para generar la action: tipo de accion y el objeto.
+   * @param {*} action Cadena con el tipo de evento.
+   * @param {*} object Objeto relacionado al evento.
    * @emits action Emite el objeto action
    * @memberof TableRowComponent
    */

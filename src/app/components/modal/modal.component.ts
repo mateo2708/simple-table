@@ -10,6 +10,12 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
+  /**
+   *
+   *
+   * @type {EventEmitter<any>}
+   * @memberof ModalComponent
+   */
   @Output('action') emitter: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
@@ -17,6 +23,11 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * @name bgClick
+   * @description Emite un evento con parametro close.
+   * @memberof ModalComponent
+   */
   bgClick() {
     this.emitter.emit('close');
   }

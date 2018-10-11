@@ -7,33 +7,67 @@
         margin: 0 1rem;
         .element-container {
             display: flex;
-            flex: 1 1 250px;
+            flex: 1 1 300px;
             flex-flow: column nowrap;
             margin: 0.7rem 1rem;
         }
-
         label {
             text-transform: uppercase;
             color: rgba(0, 31, 117, 0.718);
             font-weight: 700;
             font-size: 0.85rem;
         }
-
         input[type=text] {
             width: 100%;
             padding: 0.5rem;
             margin: 0.5rem 0;
             border-radius: 2px;
             border: 1px solid rgba(0, 31, 117, 0.4);
-            background-color: rgba(0, 31, 117, 0.1);; 
+            background-color: rgba(0, 31, 117, 0.1);
+            ;
             box-sizing: border-box;
             font-size: 1rem;
         }
-
         input:disabled {
             border: 1px solid rgba(0, 31, 117, 0.4);
             border-radius: 2px;
-            background:transparent;
+            background: transparent;
+        }
+    }
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button {
+            border: none;
+            border-radius: $border-radius;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 1.5rem 1rem;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        .save {
+            background-color: rgb(31, 61, 143);
+            border: 2px solid rgb(31, 61, 143);
+            color: white;
+        }
+        .save:hover {
+            background-color: #ffffff;
+            color: rgb(31, 61, 143);
+        }
+        .delete {
+            background-color: rgb(179, 57, 57);
+            border: 2px solid rgb(179, 57, 57);
+            color: white;
+        }
+        .delete:hover {
+            background-color: #ffffff;
+            color: rgb(179, 57, 57);
         }
     }
 }
