@@ -27,6 +27,12 @@ export class TableRowComponent implements OnInit {
   @Input('headers') arrHeaders: any;
 
 
+  /**
+   * @name emitter
+   * @description Propiead que permite emitir eventos.
+   * @type {EventEmitter<any>}
+   * @memberof TableRowComponent
+   */
   @Output('action') emitter: EventEmitter<any> = new EventEmitter();
 
   constructor() { }

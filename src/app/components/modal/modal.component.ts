@@ -11,8 +11,8 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class ModalComponent implements OnInit {
 
   /**
-   *
-   *
+   * @name emitter
+   * @description Propiedad que permite emitir eventos.
    * @type {EventEmitter<any>}
    * @memberof ModalComponent
    */
